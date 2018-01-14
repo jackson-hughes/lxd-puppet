@@ -8,7 +8,7 @@ Enter LXD.
 
 ### Prerequisites
 
-    *   The only prerequisite is a functional LXD hypervisor. 
+*   The only prerequisite is a functional LXD hypervisor. 
 
 Deployment and configuration of LXD is out of scope - [see here instead](https://linuxcontainers.org/lxd/).
     
@@ -17,7 +17,8 @@ Deployment and configuration of LXD is out of scope - [see here instead](https:/
 The `lxd-deploy.sh` requires only one argument - the container name (and hostname).
 
 It will:
-    1.  Deploy the container, pulling an image from Ubuntu's image servers, if required.
-    2.  Inject the `puppet` directory into the container.
-    3.  Install puppet (from Ubuntu's repos).
-    4.  Apply the manifests.
+
+1.  Deploy the container, pulling an image from Ubuntu's image servers, if required.
+2.  Inject the `puppet` directory into the container.
+3.  Install puppet (from Ubuntu's repos).
+4.  Apply the manifests.
