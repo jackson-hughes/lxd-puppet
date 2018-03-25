@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Author: Jackson
 # Function: Deploy LXD container with puppet code
 
@@ -22,7 +22,7 @@ tar cf - ./puppet | lxc exec $1 -- tar xf - -C /opt/
 sleep 5
 
 # Update and install puppet
-lxc exec $1 -- apt-get update 
+lxc exec $1 -- apt-get update
 lxc exec $1 -- apt install puppet -y
 
 # Apply manifests
